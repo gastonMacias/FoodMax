@@ -1,4 +1,4 @@
-
+import Navbar from "../src/components/navbar/Navbar";
 import './App.css'
 
 function App() {
@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      
+      <Navbar />
     </>
   )
 }
