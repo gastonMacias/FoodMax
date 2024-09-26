@@ -2,10 +2,11 @@
 
 
 const MiRecetario = () => {
-    return 
-        <>
-        </>
+    return <section>
+        <h2>Mi Recetario</h2>
+    </section>  
+        
 }
 
 
-export default MiRecetario;
+export default MiRecetario

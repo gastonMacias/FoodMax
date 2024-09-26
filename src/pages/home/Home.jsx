@@ -4,7 +4,7 @@
 const Home = () => {
     return (
         <div>
-
+            <h1>FOODMAX</h1>
         </div>
     )
 }
