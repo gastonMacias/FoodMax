@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 //secciones
 import Navbar from "../src/components/navbar/Navbar";
@@ -16,13 +16,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <BrowserRouter>
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/Favoritas" element={<Favoritas />} />
           <Route path="/MiRecetario" element={<MiRecetario />} />
         </Routes>
-      </BrowserRouter>
     </>
   )
 }
