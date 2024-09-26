@@ -9,18 +9,23 @@ import Favoritas from "./pages/favoritas/Favoritas";
 import MiRecetario from "../src/pages/miRecetario/MiRecetario";
 
 import './App.css'
+import { Container } from "@mui/material";
+import Aside from "./components/aside/Aside";
 
 function App() {
 
 
   return (
     <>
-      <Navbar />
+      <Container maxWidth="xl">
+        <Navbar />
+        <Aside />
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/Favoritas" element={<Favoritas />} />
           <Route path="/MiRecetario" element={<MiRecetario />} />
         </Routes>
+      </Container>
     </>
   )
 }
