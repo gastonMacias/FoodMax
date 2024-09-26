@@ -18,9 +18,9 @@ function App() {
       <Navbar />
       <BrowserRouter>
         <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/favoritas" element={<Favoritas />} />
-          <Route path="/miRecetario" element={<MiRecetario />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Favoritas" element={<Favoritas />} />
+          <Route path="/MiRecetario" element={<MiRecetario />} />
         </Routes>
       </BrowserRouter>
     </>
