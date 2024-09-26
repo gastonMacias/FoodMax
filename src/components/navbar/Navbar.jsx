@@ -4,6 +4,7 @@ import { AppBar, Box, Button, Drawer, Toolbar, Typography, IconButton } from "@m
 import NavlistDrawer from "./navListDrawer";
 import { useState } from "react";
 import Menu from "@mui/icons-material/Menu";
+import { NavLink } from "react-router-dom";
 
 import { Inbox } from "@mui/icons-material";
 
@@ -48,8 +49,8 @@ const Navbar = () => {
                                 <Button
                                     color="inherit"
                                     key={item.title}
-                                    component="a"
-                                    href={item.path}
+                                    component={ NavLink }
+                                    to={item.path}
                                 >
                                     {item.title}
                                 </Button>
@@ -61,7 +62,7 @@ const Navbar = () => {
 
             <Drawer
                 open={open}
-                anchor="left"
+                anchor="right"
                 onClose={() => setOpen(false)}
                 sx={{ display: { xs: "flex", sm: "none" } }}
             >
