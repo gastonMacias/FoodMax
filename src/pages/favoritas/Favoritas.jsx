@@ -1,7 +1,7 @@
 // import "./favoritos.css";
 
 
-const Favoritos = () => {
+const Favoritas = () => {
     return (
         <div>
 
@@ -9,4 +9,4 @@ const Favoritos = () => {
     )
 }
 
-export default Favoritos;
+export default Favoritas;
