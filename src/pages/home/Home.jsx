@@ -1,13 +1,17 @@
-// import "./home.css";
+import "./home.css";
 
 
+import SeccionHome from "../../components/seccionHome/SeccionHome";
+import Aside from "../../components/aside/Aside"
 
 
 const Home = () => {
-    return (
-        <div>
-            
+    return (<>
+        <div className="home">
+            <Aside />
+            <SeccionHome />
         </div>
+    </>
     )
 }
 
