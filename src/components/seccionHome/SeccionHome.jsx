@@ -19,7 +19,7 @@ const SeccionHome = () => {
         <h1>Recetas</h1>
       </header>
 
-      <div>
+      <div className="seccion_tarjetas">
         {recetas.map((receta) => (
           <Tarjeta
             key={receta.id}
