@@ -19,7 +19,7 @@ function App() {
     <>
       <Container maxWidth="xl">
         <Navbar />
-        <Aside />
+        {/* <Aside /> */}
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/Favoritas" element={<Favoritas />} />
