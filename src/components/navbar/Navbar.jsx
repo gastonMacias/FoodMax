@@ -33,7 +33,7 @@ const Navbar = () => {
         <>
             <AppBar position="static" color="success" className="appbar">
                 <Toolbar>
-                    <Typography variant="h6" sx={{ flexGrow: 1 }}>FOODMAX</Typography>
+                    <Typography variant="h3" sx={{ flexGrow: 1, fontWeight: 700 }} >FOODMAX</Typography>
                     <Box sx={{ display: "flex", alignItems: "center" }}>
                         {/* Aquí mueves el IconButton dentro del Box */}
                         <IconButton

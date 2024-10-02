@@ -7,10 +7,9 @@ import { Box, Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemTex
 
 const NavlistDrawer = ({ navLinks }) => {
     return (
-        <Box sx={{ width: 250 }}>
+        <Box sx={{ width: 250}}>
             <nav>
                 <List>
-                    
                     {
                         navLinks.map(item => (
                             <ListItem disablePadding key={item.title}>
