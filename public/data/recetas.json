@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "grupo": "Panificados",
+      "nombre": "Pizza Porteña",
+      "imagen": "/imagenes/pizza.jpg",
+      "dificultad": "Baja",
+      "plato": "Principal",
+      "comentario": "Este es el comentario de la receta"
+    },
+    {
+      "id": 2,
+      "grupo": ["Pastas", "Vegana"],
+      "nombre": "Noquis veganos",
+      "imagen": "/imagenes/ñoquis-veganos.jpg",
+      "dificultad": "Baja",
+      "plato": "Principal",
+      "comentario": "Este es el comentario de la receta"
+    },
+    {
+      "id": 3,
+      "grupo": "Pastas",
+      "nombre": "Ñoquis de calabaza",
+      "imagen": "/imagenes/ñoquis-calabaza.jpg",
+      "dificultad": "Baja",
+      "plato": "Principal",
+      "comentario": "Este es el comentario de la receta"
+    },
+    {
+      "id": 4,
+      "grupo": "Pescados",
+      "nombre": "Nuggets de pescado",
+      "imagen": "/imagenes/nuggets-pescado.jpg",
+      "dificultad": "Baja",
+      "plato": "Principal",
+      "comentario": "Este es el comentario de la receta"
+    },
+    {
+      "id": 5,
+      "grupo": "Guisos",
+      "nombre": "Locro salteño",
+      "imagen": "/imagenes/locro-salteño.jpg",
+      "dificultad": "Baja",
+      "plato": "Principal",
+      "comentario": "Este es el comentario de la receta"
+    },
+    {
+      "id": 6,
+      "grupo": "Coctail",
+      "nombre": "Mojito de mango",
+      "imagen": "/imagenes/mojito-mango.jpg",
+      "dificultad": "Baja",
+      "plato": "Aperitivo",
+      "comentario": "Este es el comentario de la receta"
+    },
+    {
+      "id": 7,
+      "grupo": "Postre",
+      "nombre": "Don Pedro postre",
+      "imagen": "/imagenes/donpedro-postre.jpg",
+      "dificultad": "Baja",
+      "plato": "Postre",
+      "comentario": "Este es el comentario de la receta"
+    },
+    {
+      "id": 8,
+      "grupo": "Postre",
+      "nombre": "Tarta Ópera",
+      "imagen": "/imagenes/tarta-opera.jpg",
+      "dificultad": "Alta",
+      "plato": "Postre",
+      "comentario": "Este es el comentario de la receta"
+    }
+  ]
