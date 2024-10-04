@@ -10,7 +10,7 @@ import MiRecetario from "../src/pages/miRecetario/MiRecetario";
 
 import './App.css'
 import { Container } from "@mui/material";
-import Aside from "./components/aside/Aside";
+
 
 function App() {
 
@@ -19,7 +19,6 @@ function App() {
     <>
       <Container maxWidth="xl">
         <Navbar />
-        {/* <Aside /> */}
         <Routes>
           <Route path="/Home" element={<Home />} />
           <Route path="/Favoritas" element={<Favoritas />} />
