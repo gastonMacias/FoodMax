@@ -11,7 +11,7 @@ import { Inbox } from "@mui/icons-material";
 const navLinks = [
     {
         title: "Home",
-        path: "/FoodMax",
+        path: "/",
         icon: <Inbox />
     },
     {
