@@ -11,7 +11,7 @@ import { Inbox } from "@mui/icons-material";
 const navLinks = [
     {
         title: "Home",
-        path: "/Home",
+        path: "/",
         icon: <Inbox />
     },
     {
@@ -33,7 +33,7 @@ const Navbar = () => {
         <>
             <AppBar position="static" color="success" className="appbar">
                 <Toolbar>
-                    <Typography variant="h3" sx={{ flexGrow: 1, fontWeight: 700 }} >FOODMAX</Typography>
+                    <Typography variant="h4" sx={{ flexGrow: 1, fontWeight: 700 }} >FOODMAX</Typography>
                     <Box sx={{ display: "flex", alignItems: "center" }}>
                         {/* Aquí mueves el IconButton dentro del Box */}
                         <IconButton
