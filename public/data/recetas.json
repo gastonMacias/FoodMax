@@ -11,7 +11,7 @@
     {
       "id": 2,
       "grupo": ["Pastas", "Vegana"],
-      "nombre": "Noquis veganos",
+      "nombre": "Ñoquis veganos",
       "imagen": "/imagenes/ñoquis-veganos.jpg",
       "dificultad": "Baja",
       "plato": "Principal",
