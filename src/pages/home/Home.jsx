@@ -9,7 +9,6 @@ import BuscadorRecetas from "../../components/buscadorRecetas/BuscadorRecetas";
 const Home = () => {
     return (<>
         <div className="home">
-            <BuscadorRecetas />
             <SeccionHome />
         </div>
     </>
