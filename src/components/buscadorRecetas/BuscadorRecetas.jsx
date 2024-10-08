@@ -1,13 +1,27 @@
+import SearchIcon from '@mui/icons-material/Search';
 import "./buscadorRecetas.css";
 
-const BuscadorRecetas = () => {
-    return <div className="buscador">
-        <h3>BUSCADOR DE RECETAS</h3>
+const BuscadorRecetas = ({ valorBusqueda, manejarBusqueda }) => {
+  const manejarCambio = (event) => {
+    manejarBusqueda(event.target.value); // Llamar a la función pasada desde el padre
+  };
 
-        <div className="buscador_input">
-            <input type="text" placeholder="Que te gustaria degustar?"/>
-        </div>
+  return (
+    <div className="buscador">
+      <div className="buscador_input">
+        <input
+          type="text"
+          placeholder="¿Qué te gustaría degustar?"
+          id="input"
+          value={valorBusqueda}
+          onChange={manejarCambio}
+        />
+        <button>
+          <SearchIcon />
+        </button>
+      </div>
     </div>
-}
+  );
+};
 
 export default BuscadorRecetas;

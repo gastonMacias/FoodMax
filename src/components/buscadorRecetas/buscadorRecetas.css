@@ -16,12 +16,26 @@
     font-size: 1.5rem;
 }
 
+.buscador_input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .buscador_input input {
     width: 40vw;
     height: 2rem;
-    border-radius: 5px;
     border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     text-align: center;
     font-size: 15px;
     font-weight: 600;
+}
+
+.buscador_input button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    height: 2rem;
 }
