@@ -26,16 +26,19 @@
     width: 40vw;
     height: 2rem;
     border: none;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    /* uso el border radius en sus 4 puntas hasta que implemente el boton */
+    /* border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px; */
+    border-radius: 5px;
     text-align: center;
     font-size: 15px;
     font-weight: 600;
+
 }
 
-.buscador_input button {
+/* .buscador_input button {
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     border: none;
     height: 2rem;
-}
+} */
