@@ -16,7 +16,7 @@ const Tarjeta = ({ imagen, nombre, comentario }) => {
     return (
         <Card sx={{ maxWidth: 190, maxHeight: 250 }}>
             <CardActionArea>
-                <CardMedia component="img" height="140" image={imagen} alt={nombre} />
+                <CardMedia component="img" height="140" image={`${import.meta.env.BASE_URL}${imagen}`} alt={nombre} />
                 <CardContent>
                     <Typography gutterBottom variant="h7" component="div" textAlign={"center"} fontWeight={"bold"}>
                         {nombre}
