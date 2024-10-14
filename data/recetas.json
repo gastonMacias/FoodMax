@@ -3,7 +3,7 @@
       "id": 1,
       "grupo": "Panificados",
       "nombre": "Pizza Porteña",
-      "imagen": "public/imagenes/pizza.jpg",
+      "imagen": "/imagenes/pizza.jpg",
       "dificultad": "Baja",
       "plato": "Principal",
       "comentario": "Este es el comentario de la receta"
@@ -12,7 +12,7 @@
       "id": 2,
       "grupo": ["Pastas", "Vegana"],
       "nombre": "Ñoquis veganos",
-      "imagen": "public/imagenes/ñoquis-veganos.jpg",
+      "imagen": "/imagenes/ñoquis-veganos.jpg",
       "dificultad": "Baja",
       "plato": "Principal",
       "comentario": "Este es el comentario de la receta"
