@@ -12,11 +12,15 @@ const Tarjeta = ({ imagen, nombre, comentario }) => {
 
     const handleClose = () => setOpen(false);
     const handleOpen = () => setOpen(true);
-    
+
+    const imageUrl = process.env.NODE_ENV === 'development'
+        ? `/public${imagen}`  // Agregamos '/public' en local
+        : `${import.meta.env.BASE_URL}${imagen}`;  // En producción
+
     return (
         <Card sx={{ maxWidth: 190, maxHeight: 250 }}>
             <CardActionArea>
-                <CardMedia component="img" height="140" image={`${import.meta.env.BASE_URL}${imagen}`} alt={nombre} />
+                <CardMedia component="img" height="140" image={imageUrl} alt={nombre} />
                 <CardContent>
                     <Typography gutterBottom variant="h7" component="div" textAlign={"center"} fontWeight={"bold"}>
                         {nombre}
