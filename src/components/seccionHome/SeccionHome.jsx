@@ -14,7 +14,8 @@ const SeccionHome = () => {
 
   useEffect(() => {
     // Usar fetch para cargar el archivo JSON desde la carpeta public
-    fetch("/data/recetas.json")
+    fetch(`${import.meta.env.BASE_URL}data/recetas.json`)
+    // ${import.meta.env.BASE_URL} Esto hace que Vite ajuste la ruta automáticamente dependiendo de si está en modo local o desplegado en GitHub Pages. Al estar en GitHub Pages, import.meta.env.BASE_URL será igual a https://gastonMacias.github.io/FoodMax/, mientras que localmente será simplemente /.
       .then((response) => response.json())
       .then((data) => {
         setRecetas(data);
