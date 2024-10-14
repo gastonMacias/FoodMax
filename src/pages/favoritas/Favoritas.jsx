@@ -1,10 +1,12 @@
 // import "./favoritos.css";
 
+import SeccionFavoritas from "../../components/seccionFavoritas/SeccionFavoritas";
+
 
 const Favoritas = () => {
     return (
-        <div>
-            <h2>Favoritas</h2>
+        <div className="favoritas">
+            <SeccionFavoritas />
         </div>
     )
 }
