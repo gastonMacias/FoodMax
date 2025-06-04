@@ -20,7 +20,7 @@ function App() {
       <Container maxWidth="xl">
         <Navbar />
         <Routes>
-          <Route path="/FoodMax" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/Favoritas" element={<Favoritas />} />
           <Route path="/MiRecetario" element={<MiRecetario />} />
         </Routes>
