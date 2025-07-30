@@ -2,9 +2,10 @@ import Tarjeta from "../tarjeta/Tarjeta";
 import { useState, useEffect } from "react";
 import BuscadorRecetas from "../buscadorRecetas/BuscadorRecetas";
 import "./seccionHome.css";
+import { useRecetas } from "../../context/RecetasContext";
 
 const SeccionHome = () => {
-  const [recetas, setRecetas] = useState([]); // Todas las recetas
+  const recetas = useRecetas();
   const [filtradas, setFiltradas] = useState([]); // Recetas filtradas
   const [buscador, setBuscador] = useState(""); // Valor del input de búsqueda
   const [grupo, setGrupo] = useState(""); // Valor del filtro por grupo
@@ -12,17 +13,13 @@ const SeccionHome = () => {
   const [plato, setPlato] = useState(""); // Valor del filtro por tipo de plato
 
 
+  // necesario para mostrar las cards
   useEffect(() => {
-    // Usar fetch para cargar el archivo JSON desde la carpeta public
-    fetch(`${import.meta.env.BASE_URL}data/recetas.json`)
-    // ${import.meta.env.BASE_URL} Esto hace que Vite ajuste la ruta automáticamente dependiendo de si está en modo local o desplegado en GitHub Pages. Al estar en GitHub Pages, import.meta.env.BASE_URL será igual a https://gastonMacias.github.io/FoodMax/, mientras que localmente será simplemente /.
-      .then((response) => response.json())
-      .then((data) => {
-        setRecetas(data);
-        setFiltradas(data); // Inicializamos filtradas con todas las recetas
-      })
-      .catch((error) => console.error("Error:", error));
-  }, []);
+  if (recetas.length > 0) {
+    setFiltradas(recetas);
+  }
+}, [recetas]);
+
 
   // Función para manejar el cambio en el buscador
   const manejarBusqueda = (valorBusqueda, valorGrupo, valorDificultad, valorPlato) => {
